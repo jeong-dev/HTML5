@@ -1,5 +1,6 @@
 @import url(./normalize.css);
 @import url(./reset.css);
+@import url(./fontello.css);
 
 
 /* 기본 스타일 */
@@ -21,10 +22,39 @@ body {
 
 /* 헤더 */
 .header{
-  background: pink;
+  background: #fff;
   padding: 0 30px;
   height: 15vh;
+  border-radius: 0 0 15px 15px;
 }
+
+.member {
+  background-color: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+
+/* ::before - first child  */
+/* ::after - last child */
+
+/* 우선순위 규칙 */
+/* li (Type Selector) - 1점 */
+/* .first (Class Selector) - 10점 */
+/* #item (ID Selector) - 100점 */
+
+/* .member li::before {
+  content: '\e804';
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+} */
 
 /* 비주얼 */
 .visual{
@@ -65,7 +95,7 @@ body {
 }
 
 /* 푸터 */
-.footer{
+footer{
   background: gray;
   width: 940px;
   margin: 0 auto;
