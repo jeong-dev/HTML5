@@ -68,10 +68,6 @@ body {
   padding: 4px 0;
   text-align: right;
 
-  /* position 속성을 활용하여 .member 영역을 오른쪽으로 10px만큼 이동 */
-  /* position: relative;
-  right: -10px; */
-
   /* transform 속성을 활용하여 .member 영역을 오른쪽으로 10px만큼 이동 */
   transform: translateX(10px);
 }
@@ -87,18 +83,13 @@ body {
   text-transform: uppercase;
 }
 
-/* 마지막 li 요소에 포함된 a 태그를 선택하여 오른쪽 padding 값 조절 */
-/* .member li:last-child a {
-  padding-right: 0;
-} */
-
 .divider {
   margin-right: 4px;
 }
 
 /* 메인 메뉴 */
 .navigation {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .menu {
@@ -145,7 +136,7 @@ body {
 }
 
 .sub-menu {
-  background-color: pink;
+  padding: 4px 0;
   position: absolute;
   top: 47px;
   display: none;
@@ -165,8 +156,12 @@ body {
 }
 
 .sub-menu li {
-  background-color: gold;
   display: inline-block;
+}
+
+.sub-menu a {
+  display: inline-block;
+  padding: 6px;
 }
 
 .sub-menu a::before {
@@ -190,6 +185,10 @@ body {
 
 .sub-menu a:hover::before, .sub-menu a:focus::before {
   content: "\e801";
+}
+
+.sub-menu a:hover, .sub-menu a:focus {
+  color: #e85e2c;
 }
 
 /* 비주얼 */
