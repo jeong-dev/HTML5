@@ -73,7 +73,6 @@ body {
 }
 
 .member li {
-  /* background-color: pink; */ 
   display: inline-block;
 }
 
@@ -192,9 +191,33 @@ body {
 }
 
 /* 비주얼 */
-.visual{
-  background: orange;
-  height: 10vh;
+/* @ at sign rule : 무엇을 정의하거나 선언하는 것 */
+@keyframes moveEffect {
+  0% {
+    color: rgba(0, 0, 0, 0);
+    font-size: 12px;
+    transform: translate(0, 0);
+  }
+  100% {
+    color: rgba(0, 0, 0, 1);
+    font-size: 24px;
+    transform: translate(400px, 75px);
+  }
+}
+
+.visual {
+  background: pink;
+  height: 120px;
+}
+
+.visual-text {
+  display: inline-block;
+  background-color: coral;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  animation-name: moveEffect;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 /* 메인 */
