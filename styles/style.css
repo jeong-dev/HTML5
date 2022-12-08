@@ -31,8 +31,11 @@ a {
 
 /* 본문 스타일 */
 body {
-  background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 60%, #fff 100%);
-  color: #222;
+  background-color: #ccc;
+  background-image: url(./images/bg_flower.png), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 60%, #fff 100%);
+  background-repeat: no-repeat, repeat;
+  background-position: 50% 0, 0 0;
+  
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font-size: 1.4rem;
 
@@ -206,17 +209,18 @@ body {
 }
 
 .visual {
-  background: pink;
+  /* background: pink; */
   height: 120px;
 }
 
 .visual-text {
   display: inline-block;
-  background-color: coral;
+  /* background-color: coral; */
   font-family: Georgia, 'Times New Roman', Times, serif;
 
   animation-name: moveEffect;
   animation-duration: 3s;
+  animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
 }
 
