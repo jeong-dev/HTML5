@@ -251,6 +251,8 @@ body {
 }
 
 .visual-text {
+  position: relative;
+  z-index: 5;
   display: inline-block;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
