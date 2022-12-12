@@ -280,7 +280,6 @@ body {
   width: 250px;
 }
 .group2 {
-  background-color: salmon;
   width: 380px;
 }
 .group3 {
@@ -320,7 +319,9 @@ body {
   background-color: #bcbcbc;
 }
 
-.login-form legend {display: none;}
+legend {display: none;}
+
+.a11y-hidden {display: none;}
 
 .login-form label {
   display: inline-block;
@@ -482,6 +483,41 @@ body {
   float: left;
   width: 150px;
   margin-top: 5px;
+  font-size: 13px;
+}
+
+/* 검색 폼 */
+.search-form {
+  background: #ccc linear-gradient(to bottom, #d2d2d2, #f1f1f1);
+  border: 1px solid #959595;
+  border-radius: 20px 20px 0 0;
+  padding: 15px 25px 10px;
+}
+
+.search-form-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-form label {margin-right: 8px;}
+
+.search-form input {
+  width: 188px;
+  height: 25px;
+  padding: 0 0 0 5px;
+  font-size: 13.5px;
+}
+
+.search-form button {
+  background-color: #222;
+  border: 0;
+  outline: 0;
+
+  width: 45px;
+  height: 25px;
+  border-radius: 3px;
+
+  color: white;
   font-size: 13px;
 }
 
