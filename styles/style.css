@@ -521,6 +521,70 @@ legend {display: none;}
   font-size: 13px;
 }
 
+/* 공지사항 및 자료실 */
+.board {
+  margin-top: 20px;
+  position: relative;
+}
+
+.tab-list {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.tab {
+  background-color: #ccc;
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  padding: 5px 10px;
+  color: #666;
+}
+
+.is-select.tab {
+  background-color: white;
+  border-color: currentColor currentColor #fff currentColor;
+  color: #e85e2c;
+}
+
+.tab-panel {
+  display: none;
+  margin-top: 15px;
+}
+
+.is-select.tab-panel {
+  display: block;
+}
+
+.board-more {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.icon-plus::before {
+  color: hsla(110, 50%, 30%, 1);
+}
+
+.board-list {
+  margin-top: 10px;
+}
+
+.board-list li {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board-list a {
+  flex-grow: 1; /* 딱 글자 부분만 영역인 게 아니라 한 줄 전체가 영역일 수 있도록 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* 세 개 세트로 쓰임 */
+}
+
+.board-list time {flex-shrink: 0;}
+
 /* 슬로건 */
 .slogan{
   background: skyblue;
