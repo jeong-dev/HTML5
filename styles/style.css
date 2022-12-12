@@ -406,6 +406,85 @@ body {
   margin-right: 3px;
 }
 
+/* 웹 관련 용어 */
+.term {
+  background: #ccc linear-gradient(to bottom, #d2d2d2, #f1f1f1);
+  border: 1px solid #959595;
+  border-radius: 5px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.term-title {
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.term-list {}
+
+.term-list div {
+  display: flow-root;
+}
+
+.term-list .div::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* .odd */
+.odd {
+  margin-bottom: 15px;
+}
+
+.odd .term-list-subject {
+  color: #296897;
+  font-weight: 500;
+  float: right;
+  width: 150px;
+}
+
+.odd .term-list-thumbnail {
+  float: left;
+}
+
+.odd .term-list-thumbnail img {
+  vertical-align: middle; /* 아래쪽 gap 사라지게 하기 위해 */
+}
+
+.odd .term-list-brief {
+  float: right;
+  width: 150px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+/* .even */
+.even {}
+
+.even .term-list-subject {
+  color: #296897;
+  font-weight: 500;
+  float: left;
+  width: 150px;
+}
+
+.even .term-list-thumbnail {
+  float: right;
+}
+
+.even .term-list-thumbnail img {
+  vertical-align: middle; /* 아래쪽 gap 사라지게 하기 위해 */
+}
+
+.even .term-list-brief {
+  float: left;
+  width: 150px;
+  margin-top: 5px;
+  font-size: 13px;
+}
+
 /* 슬로건 */
 .slogan{
   background: skyblue;
