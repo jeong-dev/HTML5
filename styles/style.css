@@ -583,6 +583,76 @@ legend {display: none;}
   /* 세 개 세트로 쓰임 */
 }
 
+/* 새 소식 */
+.news {
+  position: relative;
+  margin-top: 20px;
+  padding-bottom: 15px;
+}
+
+.news-title {
+  color: #e85e2c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.news-title::after {
+  content: "";
+  background: #aaa linear-gradient(to right, #ccc, #fff);
+  width: 90%;
+  height: 1px;
+
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.news-link {display: block;}
+
+.news-item {
+  position: relative;
+}
+
+.news-item-title {
+  position: absolute;
+  top: 30px;
+  left: 130px;
+  font-weight: 500;
+}
+
+.news-item-date {
+  position: absolute;
+  top: 55px;
+  left: 130px;
+}
+
+.news-item-brief {
+  position: absolute;
+  top: 80px;
+  left: 130px;
+
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.news-item-thumbnail {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  text-align: center;
+}
+
+.news-item-thumbnail img {
+  box-shadow: 0 15px 10px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.news-more {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+
 .board-list time {flex-shrink: 0;}
 
 /* 슬로건 */
