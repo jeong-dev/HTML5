@@ -809,9 +809,47 @@ legend {display: none;}
 
 /* 슬로건 */
 .slogan{
-  background: skyblue;
-  height: 10vh;
+  padding: 15px 100px 15px 180px;
   clear: both;
+  position: relative;
+}
+
+.slogan-title {
+  width: 110px;
+  height: 83px;
+
+  position: absolute;
+  bottom: -25px;
+  left: 35px;
+
+  text-align: center;
+  line-height: 83px;
+}
+
+.slogan-title::before {
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background-image: url(./images/coffee.png);
+  background-repeat: no-repeat;
+}
+
+.slogan-content {
+  color: #a09784;
+}
+
+.slogan-content q::before {
+  display: inline-block;
+  font-size: 3rem;
+  transform: translateY(10px);
+}
+.slogan-content q::after {
+  content: "";
 }
 
 /* 푸터 */
