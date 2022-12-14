@@ -284,7 +284,6 @@ body {
   width: 380px;
 }
 .group3 {
-  background-color: gold;
   width: 190px;
 }
 
@@ -738,6 +737,74 @@ legend {display: none;}
   height: 147px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+/* 인기 사이트 */
+.favorite {
+  position: relative;
+}
+
+.favorite-list {
+  list-style: none;
+}
+
+.favorite-list li {
+  margin-top: 10px;
+  position: relative;
+}
+
+.favorite-list li::before {
+  background-color: #aaa;
+  border-radius: 3px;
+  width: 1.5em;
+  margin-right: 3px;
+  display: inline-block;
+
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.no1::before {content: "1";}
+.no2::before {content: "2";}
+.no3::before {content: "3";}
+.no4::before {content: "4";}
+
+.favorite-list li em {
+  position: absolute;
+  top: 3px;
+  right: 0;
+}
+
+.up, .stop, .down {
+  display: inline-block;
+  width: 9px;
+  height: 11px;
+}
+
+.up {
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.stop {
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  background-position: 0 48%;
+}
+
+.down {
+  background-image: url(./images/rank.png);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.favorite-more {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 슬로건 */
